@@ -1,0 +1,8 @@
+<%= @restaurant.name %>
+<%= @restaurant.address %>
+<%= @restaurant.rating %>
+<%= @restaurant.opening_hours %>
+
+<%= link_to 'Home', root_path  %>
+<%= link_to 'Edit', edit_restaurant_path(@restaurant) %>
+<%= link_to 'Destroy',  @restaurant,  method: :delete, data: { confirm: 'Are you sure?' } %>

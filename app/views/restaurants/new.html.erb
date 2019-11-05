@@ -1,0 +1,38 @@
+<h1>Create your restaurant! 🍉 </h1>
+<%= form_with model: @restaurant do |f| %>
+  <%= f.label :name %>
+  <%= f.text_field :name %><br>
+  <%= f.label :address %>
+  <%= f.text_field :address %><br>
+  <%= f.label :rating %>
+  <%= f.select :rating, (1..5) %><br>
+  <%= f.label :opening_hours %>
+  <%= f.text_field :opening_hours %><br>
+  <%= f.submit "Create" %><br>
+<% end %>
+
+
+
+
+
+
+
+
+
+
+
+<%# <h1>Create your new restaurant</h1>
+<form action="/restaurants" method="post">
+  <label for="name">Restaurant name:</label>
+  <input type="text" name="restaurant[name]">
+
+  <label for="address">Restaurant address:</label>
+  <input type="text" name="restaurant[address]">
+
+  <label for="rating">Restaurant rating:</label>
+  <input type="text" name="restaurant[rating]">
+
+  <label for="opening_hours">Restaurant opening hours:</label>
+  <input type="text" name="restaurant[opening_hours]">
+  <input type="submit">
+</form> %>

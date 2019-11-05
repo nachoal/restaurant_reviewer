@@ -1,0 +1,13 @@
+<h1>Update your restaurant! 🍉 </h1>
+<%= form_with model: @restaurant do |f| %>
+  <%= f.label :name %>
+  <%= f.text_field :name %><br>
+  <%= f.label :address %>
+  <%= f.text_field :address %><br>
+  <%= f.label :rating %>
+  <%= f.select :rating, (1..5) %><br>
+  <%= f.label :opening_hours %>
+  <%= f.text_field :opening_hours %><br>
+  <%= f.submit "Create" %><br>
+<% end %>
+
